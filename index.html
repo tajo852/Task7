@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+
+
+var headers = ['Product ID', 'Product Name', 'Product Quality', 'Product Quantity'];
+
+var products = [
+  {
+    productId: 1,
+    productName: 'Wheat',
+    productQuality: 'Good',
+    productQuantity: '200 Bags'
+  },
+  {
+    productId: 2,
+    productName: 'Rice',
+    productQuality: 'Good',
+    productQuantity: '250 Bags'
+  },
+  {
+    productId: 3,
+    productName: 'Sugar',
+    productQuality: 'Good',
+    productQuantity: '200 Bags'
+  },
+  {
+    productId: 3,
+    productName: 'Sugar',
+    productQuality: 'Good',
+    productQuantity: '200 Bags'
+  },
+  {
+    productId: 3,
+    productName: 'Sugar',
+    productQuality: 'Good',
+    productQuantity: '200 Bags'
+  },
+  {
+    productId: 3,
+    productName: 'Sugar',
+    productQuality: 'Good',
+    productQuantity: '200 Bags'
+  }
+];
+
+   
+        document.write("<h3>This table is made through JavaScript</h2> ");
+document.write("<h5> by Taj Wali</h5> ");
+        document.write("<table border= '1'>");
+
+document.write( "<tr>");
+        for(let i=0 ; i < headers.length ;  i++)
+        {
+           document.write( "<th>" + headers[i] + "</th> ");
+        }
+document.write( "</tr>");
+
+
+        for(let i=0 ; i < products.length ;  i++)
+        {
+           document.write( "<tr><td>" + products[i].productId+ "</td> <td>" +products[i].productName+  "</td> <td>" +products[i].productQuality+ "</td> <td>" +products[i].productQuantity+ "</td> </tr>"  );
+        }
+        document.write("</table>");
+
+
+
+document.write("<br> ");
+document.write("<br> ");
+document.write("<br> ");
+document.write("<br> ");
+
+var a = ["Web Tech" , "Compiler" , "V&V"] ;
+
+var course = ["Data Structures & Algorithm", "Web Technology", "Apptitude & Logical Reasoning", "Programming Languages"];
+
+var topic = ["Array", "Web Technology" , "Linked List", "Stacks", "Queues" , "Trees", "Graphs"];
+
+   
+        document.write("<h3>List of available courses</h3> ");
+
+
+document.write("<ul>");
+        for(let i=0 ; i < course.length ;  i++)
+        {
+            document.write( "<li>" + course[i] + "</li>");
+        }
+document.write("</ul>");
+
+
+
+document.write("<h3>Data Structures topics</h3> ");
+        
+ 
+document.write("<ol>");
+        for(let i=0 ; i < topic.length ;  i++)
+        {
+            document.write( "<li>" + topic[i] + "</li>");
+        }
+document.write("</ol>");
+        
+
+
+        
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
